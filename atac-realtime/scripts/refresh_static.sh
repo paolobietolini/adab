@@ -11,7 +11,7 @@ cd "$STATIC_DIR"
 ZIP_URL="https://romamobilita.it/sites/default/files/rome_static_gtfs.zip"
 MD5_URL="${ZIP_URL}.md5"
 
-NEW_MD5=$(curl -sf "$MD5_URL" | awk '{print $1}')
+NEW_MD5=$(curl -sLf "$MD5_URL" | awk '{print $1}')
 OLD_MD5=$(md5sum rome_static_gtfs.zip 2>/dev/null | awk '{print $1}' || echo "none")
 
 if [ "$NEW_MD5" = "$OLD_MD5" ]; then
@@ -30,7 +30,7 @@ if [ -f rome_static_gtfs.zip ]; then
 fi
 
 # Download new version
-curl -sf -o rome_static_gtfs.zip "$ZIP_URL"
+curl -sLf -o rome_static_gtfs.zip "$ZIP_URL"
 
 # Extract (overwrite the individual txt files)
 unzip -o rome_static_gtfs.zip -x "__MACOSX/*" "*.DS_Store" 2>/dev/null || true
