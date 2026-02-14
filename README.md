@@ -1,6 +1,8 @@
-# ADAB - All Data Is Beautiful
+# ADAB
 
-A collection of data visualization projects, mostly aimed at [r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful/).
+**All Data Are Beautiful.**
+
+A collection of data visualization and analytics projects.
 
 ## Projects
 
