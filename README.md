@@ -1,5 +1,4 @@
-# ADAB
-## All Data Is Beautiful
+# ADAB - All Data Is Beautiful
 
 A collection of data visualization projects, mostly aimed at [r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful/).
 
